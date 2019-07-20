@@ -3,10 +3,17 @@
   <img src="./assets/logo.png">
   <router-view />
   <Helloss></Helloss>
-  <mini v-for='content in contents' v-bind:content='content'></mini>
+  <mini
+  v-for='content in contents'
+  :key='index'
+  v-bind:content='content'></mini>
   <div>{{test}}</div>
   <button v-on:click='click()'>button</button>
   <div v-if='seen'>{{compute()}}</div>
+
+  <!-- router-link用来更换router-view的内容 -->
+  <router-link to='/user'>user页面</router-link>
+  <router-link to='/'>首页页面</router-link>
 </div>
 </template>
 

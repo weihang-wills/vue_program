@@ -12,12 +12,15 @@ Vue.config.productionTip = false
 new Vue({
   el: '#apps',
   router,
-  components: {//component可以定义多个，然后下面的template决定使用哪个
+  components: {
+    //component可以定义多个，然后下面的template决定使用哪个
     App,
     Mini
   },
-  template: '<App>'//或者<Mini/>
+  template: '<app/>'//或者<Mini/>
 })
+
+
 
 new Vue({
   el: '#mini',

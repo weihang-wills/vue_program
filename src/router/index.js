@@ -11,8 +11,14 @@ export default new Router({
       path: '/',
       name: 'Hello+mini',
       component: Mini
+    },
+    {
+      path: '/user',
+    name: 'Hello+mini2',
+    component: HelloMM
+
     }
-  ],
+  ]
   // routes: [
   //   {
   //     path: '/',

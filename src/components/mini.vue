@@ -18,10 +18,17 @@
 <script>
 export default {
   props: {
-    content: Object,
+    content: {
+
+      type: Object,
+      default: {
+        id: 22,
+        text: 'meili呵呵哒'
+      }
+    },
     value: {
       type: String,
-      default: 'hahha'
+      default: 'olo'
 
     }
   }, //尝试了props和父级的数据关联
