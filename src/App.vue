@@ -14,6 +14,7 @@
   <!-- router-link用来更换router-view的内容 -->
   <router-link to='/user'>user页面</router-link>
   <router-link to='/'>首页页面</router-link>
+  <component v-bind:is="Helloss"></component>
 </div>
 </template>
 
@@ -26,6 +27,7 @@ export default {
     return {
       test: 'nihaoya',
       seen: true,
+      Helloss:Helloss,
       contents: [{
           id: 1,
           text: '呵呵哒'
